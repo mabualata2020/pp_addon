@@ -1,0 +1,70 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-01-29 07:53:26.667551",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "position",
+  "description",
+  "minmum_required",
+  "attachment",
+  "year_one",
+  "year_two",
+  "year_three"
+ ],
+ "fields": [
+  {
+   "fieldname": "position",
+   "fieldtype": "Link",
+   "label": "Position",
+   "options": "PP_Position"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "label": "Description"
+  },
+  {
+   "fieldname": "minmum_required",
+   "fieldtype": "Data",
+   "label": "Minmum Required"
+  },
+  {
+   "fieldname": "attachment",
+   "fieldtype": "Attach",
+   "label": "Attachment"
+  },
+  {
+   "default": "1",
+   "fieldname": "year_one",
+   "fieldtype": "Int",
+   "label": "Year one"
+  },
+  {
+   "default": "0",
+   "fieldname": "year_two",
+   "fieldtype": "Int",
+   "label": "Year Two"
+  },
+  {
+   "default": "0",
+   "fieldname": "year_three",
+   "fieldtype": "Int",
+   "label": "Year Three"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-02-01 13:54:43.384267",
+ "modified_by": "Administrator",
+ "module": "Pp Addon",
+ "name": "PP_Project labor",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

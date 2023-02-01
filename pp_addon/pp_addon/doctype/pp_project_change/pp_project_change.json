@@ -1,0 +1,82 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{CHG}.{project}.{###}",
+ "creation": "2023-01-29 12:03:31.221982",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "project",
+  "project_name",
+  "column_break_2",
+  "change_details",
+  "approval_section",
+  "approval"
+ ],
+ "fields": [
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project id",
+   "options": "PP_Project"
+  },
+  {
+   "depends_on": "project",
+   "fetch_from": "project.project_name",
+   "fieldname": "project_name",
+   "fieldtype": "Data",
+   "label": "Project_name"
+  },
+  {
+   "bold": 1,
+   "collapsible": 1,
+   "fieldname": "column_break_2",
+   "fieldtype": "Section Break",
+   "label": "Change Details"
+  },
+  {
+   "fieldname": "change_details",
+   "fieldtype": "Table",
+   "label": "Change Details",
+   "options": "PP_Project change child"
+  },
+  {
+   "bold": 1,
+   "collapsible": 1,
+   "fieldname": "approval_section",
+   "fieldtype": "Section Break",
+   "label": "approval"
+  },
+  {
+   "fieldname": "approval",
+   "fieldtype": "Table",
+   "label": "Approval",
+   "options": "PP_Project change approve"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-02-01 13:54:40.409141",
+ "modified_by": "Administrator",
+ "module": "Pp Addon",
+ "name": "PP_Project change",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

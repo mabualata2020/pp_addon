@@ -1,0 +1,31 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-01-22 08:43:16.245118",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "participate"
+ ],
+ "fields": [
+  {
+   "fieldname": "participate",
+   "fieldtype": "Link",
+   "label": "participate",
+   "options": "PP_Stakholder"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-02-01 13:54:46.206515",
+ "modified_by": "Administrator",
+ "module": "Pp Addon",
+ "name": "PP_Mparticipate",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -1,0 +1,108 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:stakholder",
+ "creation": "2023-01-16 20:53:59.335972",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "stakholder",
+  "mobile_no",
+  "email",
+  "department",
+  "position",
+  "role",
+  "influence",
+  "classification",
+  "column_break_6",
+  "requirement",
+  "expectations"
+ ],
+ "fields": [
+  {
+   "fieldname": "stakholder",
+   "fieldtype": "Data",
+   "label": "Stakholder",
+   "unique": 1
+  },
+  {
+   "fieldname": "mobile_no",
+   "fieldtype": "Data",
+   "label": "mobile no"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "email"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "PP_Department"
+  },
+  {
+   "fieldname": "position",
+   "fieldtype": "Link",
+   "label": "Position",
+   "options": "PP_Position"
+  },
+  {
+   "fieldname": "role",
+   "fieldtype": "Link",
+   "label": "Role",
+   "options": "PP_Role"
+  },
+  {
+   "fieldname": "influence",
+   "fieldtype": "Select",
+   "label": "influence",
+   "options": "Low\nMediom\nHigh"
+  },
+  {
+   "fieldname": "classification",
+   "fieldtype": "Select",
+   "label": "Classification",
+   "options": "Low\nMedium\nHigh"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "requirement",
+   "fieldtype": "Small Text",
+   "label": "Requirement"
+  },
+  {
+   "fieldname": "expectations",
+   "fieldtype": "Small Text",
+   "label": "Expectations"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-02-01 13:54:58.390138",
+ "modified_by": "Administrator",
+ "module": "Pp Addon",
+ "name": "PP_Stakholder",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

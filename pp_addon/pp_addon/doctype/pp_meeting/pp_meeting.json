@@ -1,0 +1,121 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:MT.{project}.{YYYY}{MM}.{##}",
+ "creation": "2023-01-22 08:25:15.105680",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "project",
+  "meeting_date",
+  "meeting_title",
+  "start_meeting",
+  "column_break_4",
+  "project_name",
+  "meeting_manager",
+  "location",
+  "meeting_elements",
+  "elements",
+  "participate",
+  "desction"
+ ],
+ "fields": [
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project id",
+   "options": "PP_Project"
+  },
+  {
+   "default": "Today",
+   "fieldname": "meeting_date",
+   "fieldtype": "Datetime",
+   "label": "Meeting  Date"
+  },
+  {
+   "fieldname": "meeting_title",
+   "fieldtype": "Data",
+   "label": "Meeting Title"
+  },
+  {
+   "fieldname": "start_meeting",
+   "fieldtype": "Button",
+   "label": "Start Meeting"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "project",
+   "fetch_from": "project.project_name",
+   "fieldname": "project_name",
+   "fieldtype": "Read Only",
+   "label": "Project name"
+  },
+  {
+   "fieldname": "meeting_manager",
+   "fieldtype": "Link",
+   "label": "Meeting manager",
+   "options": "PP_Employee"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location"
+  },
+  {
+   "bold": 1,
+   "collapsible": 1,
+   "fieldname": "meeting_elements",
+   "fieldtype": "Section Break",
+   "label": "Meeting elements"
+  },
+  {
+   "bold": 1,
+   "fieldname": "elements",
+   "fieldtype": "Table",
+   "label": "Elements",
+   "options": "PP_Melement"
+  },
+  {
+   "bold": 1,
+   "fieldname": "participate",
+   "fieldtype": "Table",
+   "label": "Participate",
+   "options": "PP_Mparticipate"
+  },
+  {
+   "bold": 1,
+   "fieldname": "desction",
+   "fieldtype": "Table",
+   "label": "Desction",
+   "options": "PP_Desction"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-02-01 13:54:44.794189",
+ "modified_by": "Administrator",
+ "module": "Pp Addon",
+ "name": "PP_Meeting",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

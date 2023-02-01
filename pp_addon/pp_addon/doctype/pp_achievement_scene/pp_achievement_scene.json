@@ -1,0 +1,93 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:AS.{project}.{YYYY}{MM}.{##}",
+ "creation": "2023-01-25 08:43:03.542132",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "project",
+  "po_no",
+  "po_date",
+  "vendor",
+  "column_break_5",
+  "request_no",
+  "request_value",
+  "manager"
+ ],
+ "fields": [
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project id",
+   "options": "PP_Project"
+  },
+  {
+   "depends_on": "project",
+   "fetch_from": "project.po_number",
+   "fieldname": "po_no",
+   "fieldtype": "Read Only",
+   "label": "PO No"
+  },
+  {
+   "depends_on": "project",
+   "fetch_from": "project.po_date",
+   "fieldname": "po_date",
+   "fieldtype": "Read Only",
+   "label": "PO date"
+  },
+  {
+   "depends_on": "project",
+   "fetch_from": "project.vendor",
+   "fieldname": "vendor",
+   "fieldtype": "Read Only",
+   "label": "Vendor"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "request_no",
+   "fieldtype": "Data",
+   "label": "Request no"
+  },
+  {
+   "fieldname": "request_value",
+   "fieldtype": "Float",
+   "label": "Request value",
+   "non_negative": 1
+  },
+  {
+   "fieldname": "manager",
+   "fieldtype": "Link",
+   "label": "Manager",
+   "options": "PP_Employee"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-02-01 13:54:49.079491",
+ "modified_by": "Administrator",
+ "module": "Pp Addon",
+ "name": "PP_Achievement scene",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

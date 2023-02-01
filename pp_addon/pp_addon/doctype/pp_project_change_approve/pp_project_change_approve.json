@@ -1,0 +1,44 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-01-29 12:32:59.638786",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "stakholder",
+  "approve",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "stakholder",
+   "fieldtype": "Link",
+   "label": "Stakholder",
+   "options": "PP_Stakholder"
+  },
+  {
+   "fieldname": "approve",
+   "fieldtype": "Select",
+   "label": "Approve",
+   "options": "Approve\nDefer\nReject"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Data",
+   "label": "Remarks"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-02-01 13:54:40.014729",
+ "modified_by": "Administrator",
+ "module": "Pp Addon",
+ "name": "PP_Project change approve",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

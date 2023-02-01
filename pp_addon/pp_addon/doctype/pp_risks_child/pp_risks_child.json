@@ -1,0 +1,71 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-01-23 22:04:54.266528",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "risk",
+  "phase",
+  "probability",
+  "impact",
+  "project_link",
+  "attached",
+  "action"
+ ],
+ "fields": [
+  {
+   "fieldname": "risk",
+   "fieldtype": "Link",
+   "label": "Risk",
+   "options": "PP_Risk type"
+  },
+  {
+   "fieldname": "phase",
+   "fieldtype": "Link",
+   "label": "Phase",
+   "options": "PP_Phase"
+  },
+  {
+   "fieldname": "probability",
+   "fieldtype": "Select",
+   "label": "Probability",
+   "options": "Low\nMedium\nHigh"
+  },
+  {
+   "fieldname": "impact",
+   "fieldtype": "Select",
+   "label": "Impact",
+   "options": "Low\nMedium\nHigh"
+  },
+  {
+   "fieldname": "project_link",
+   "fieldtype": "Link",
+   "label": "Project Link",
+   "options": "PP_Project"
+  },
+  {
+   "fieldname": "attached",
+   "fieldtype": "Attach",
+   "label": "Attached "
+  },
+  {
+   "fieldname": "action",
+   "fieldtype": "Text Editor",
+   "label": "Action"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-02-01 13:54:46.527802",
+ "modified_by": "Administrator",
+ "module": "Pp Addon",
+ "name": "PP_Risks child",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

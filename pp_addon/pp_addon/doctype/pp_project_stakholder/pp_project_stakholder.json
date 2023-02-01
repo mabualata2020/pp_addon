@@ -1,0 +1,38 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-01-16 21:05:09.881306",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "stakholder",
+  "role"
+ ],
+ "fields": [
+  {
+   "fieldname": "stakholder",
+   "fieldtype": "Link",
+   "label": "Stakholder",
+   "options": "PP_Stakholder"
+  },
+  {
+   "fieldname": "role",
+   "fieldtype": "Link",
+   "label": "Role",
+   "options": "PP_Role"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-02-01 13:54:58.071674",
+ "modified_by": "Administrator",
+ "module": "Pp Addon",
+ "name": "PP_Project stakholder",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

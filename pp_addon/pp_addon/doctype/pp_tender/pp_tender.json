@@ -1,0 +1,112 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:refrerance_no",
+ "creation": "2023-01-18 18:47:11.026865",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "project",
+  "tender_name",
+  "tender_no",
+  "refrerance_no",
+  "tender_purpose",
+  "column_break_8",
+  "tender_type",
+  "tender_value",
+  "tender_state",
+  "tender_period",
+  "tender__p",
+  "tender_f"
+ ],
+ "fields": [
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "PP_Project"
+  },
+  {
+   "fieldname": "tender_name",
+   "fieldtype": "Data",
+   "label": "Tender Name"
+  },
+  {
+   "fieldname": "tender_no",
+   "fieldtype": "Data",
+   "label": "Tender no"
+  },
+  {
+   "fieldname": "refrerance_no",
+   "fieldtype": "Data",
+   "label": "Refrerance No",
+   "unique": 1
+  },
+  {
+   "fieldname": "tender_purpose",
+   "fieldtype": "Data",
+   "label": "Tender Purpose"
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tender_type",
+   "fieldtype": "Select",
+   "label": "Tender Type",
+   "options": "General\nPrivate\nInvitation"
+  },
+  {
+   "fieldname": "tender_value",
+   "fieldtype": "Data",
+   "label": "Tender Value"
+  },
+  {
+   "fieldname": "tender_state",
+   "fieldtype": "Select",
+   "label": "Tender State",
+   "options": "Approved\nunder processing"
+  },
+  {
+   "fieldname": "tender_period",
+   "fieldtype": "Data",
+   "label": "Tender Period"
+  },
+  {
+   "fieldname": "tender__p",
+   "fieldtype": "Float",
+   "label": "Tender  P"
+  },
+  {
+   "fieldname": "tender_f",
+   "fieldtype": "Float",
+   "label": "Tender F"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-02-01 13:54:57.649594",
+ "modified_by": "Administrator",
+ "module": "Pp Addon",
+ "name": "PP_Tender",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

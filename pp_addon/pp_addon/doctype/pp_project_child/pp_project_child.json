@@ -1,0 +1,45 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-01-27 18:31:22.982330",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "year",
+  "reserved",
+  "actual"
+ ],
+ "fields": [
+  {
+   "default": "2023",
+   "fieldname": "year",
+   "fieldtype": "Int",
+   "label": "Year "
+  },
+  {
+   "default": "0",
+   "fieldname": "reserved",
+   "fieldtype": "Float",
+   "label": "Reserved"
+  },
+  {
+   "default": "0",
+   "fieldname": "actual",
+   "fieldtype": "Float",
+   "label": "Actual"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-02-01 13:54:44.055214",
+ "modified_by": "Administrator",
+ "module": "Pp Addon",
+ "name": "PP_Project child",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

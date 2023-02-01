@@ -1,0 +1,49 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-01-29 18:43:21.589988",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "performance_type",
+  "project_objectives",
+  "completion_criteria",
+  "how_met"
+ ],
+ "fields": [
+  {
+   "fieldname": "performance_type",
+   "fieldtype": "Link",
+   "label": "Performance Type",
+   "options": "PP_Performance type"
+  },
+  {
+   "fieldname": "project_objectives",
+   "fieldtype": "Data",
+   "label": "Project Objectives"
+  },
+  {
+   "fieldname": "completion_criteria",
+   "fieldtype": "Data",
+   "label": " Completion Criteria"
+  },
+  {
+   "fieldname": "how_met",
+   "fieldtype": "Data",
+   "label": "How Met"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-02-01 13:53:51.468446",
+ "modified_by": "Administrator",
+ "module": "Pp Addon",
+ "name": "PP_Project close child",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

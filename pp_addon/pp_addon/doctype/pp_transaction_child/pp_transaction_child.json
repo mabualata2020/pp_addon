@@ -1,0 +1,76 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-01-22 11:47:32.159138",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "transaction",
+  "trans_date",
+  "from",
+  "to",
+  "action",
+  "send_by",
+  "descr"
+ ],
+ "fields": [
+  {
+   "fieldname": "transaction",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "transaction",
+   "options": "PP_Transaction type"
+  },
+  {
+   "default": "Today",
+   "fieldname": "trans_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Trans. Date"
+  },
+  {
+   "fieldname": "from",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "From",
+   "options": "PP_Department"
+  },
+  {
+   "fieldname": "to",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "To",
+   "options": "PP_Department"
+  },
+  {
+   "fieldname": "action",
+   "fieldtype": "Link",
+   "label": "Action",
+   "options": "PP_Action"
+  },
+  {
+   "fieldname": "send_by",
+   "fieldtype": "Select",
+   "label": "Send by",
+   "options": "Email\nLetter"
+  },
+  {
+   "fieldname": "descr",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-02-01 13:54:53.821102",
+ "modified_by": "Administrator",
+ "module": "Pp Addon",
+ "name": "PP_Transaction child",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

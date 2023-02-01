@@ -1,0 +1,43 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-01-29 17:29:16.810484",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "project_performance",
+  "what_worked_well",
+  "what_can_be_improved"
+ ],
+ "fields": [
+  {
+   "fieldname": "project_performance",
+   "fieldtype": "Link",
+   "label": "Project Performance",
+   "options": "PP_Performance type"
+  },
+  {
+   "fieldname": "what_worked_well",
+   "fieldtype": "Data",
+   "label": "What Worked Well"
+  },
+  {
+   "fieldname": "what_can_be_improved",
+   "fieldtype": "Data",
+   "label": "What Can Be Improved"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-02-01 13:53:52.404961",
+ "modified_by": "Administrator",
+ "module": "Pp Addon",
+ "name": "PP_Project learn child1",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
