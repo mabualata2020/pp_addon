@@ -1,0 +1,172 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:sp_name",
+ "creation": "2023-11-14 09:52:07.030092",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "sp_name",
+  "sp_website",
+  "go_to_web_site",
+  "sp_type",
+  "contact_info_section",
+  "sp_contact_person",
+  "sp_contact_email",
+  "sp_contact_mobile",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "sp_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Sponsor Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "sp_website",
+   "fieldtype": "Data",
+   "label": "Sponsor Web Site",
+   "options": "URL"
+  },
+  {
+   "fieldname": "sp_contact_person",
+   "fieldtype": "Data",
+   "label": "Sponsor Contact Person"
+  },
+  {
+   "fieldname": "sp_contact_email",
+   "fieldtype": "Data",
+   "label": "Sponsor Contact Email",
+   "options": "Email"
+  },
+  {
+   "default": "+966-",
+   "fieldname": "sp_contact_mobile",
+   "fieldtype": "Data",
+   "label": "Sponsor Contact Mobile",
+   "options": "Phone"
+  },
+  {
+   "fieldname": "sp_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Sponsor Type",
+   "options": "\nGovernment\nPrivate",
+   "reqd": 1
+  },
+  {
+   "fieldname": "contact_info_section",
+   "fieldtype": "Section Break",
+   "label": "Contact Info"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Project Sponsors",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "go_to_web_site",
+   "fieldtype": "Button",
+   "hidden": 1,
+   "label": "Go To Web Site"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-12-20 14:06:46.051502",
+ "modified_by": "Administrator",
+ "module": "Pp Addon",
+ "name": "Project Sponsors",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Addon User",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Addon Limited"
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Addon Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Accounts Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Accounts User",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Projects User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

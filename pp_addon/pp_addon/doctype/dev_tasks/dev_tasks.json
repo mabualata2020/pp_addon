@@ -1,0 +1,124 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:task_name",
+ "creation": "2024-02-07 12:00:16.261998",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "task_name",
+  "project",
+  "status",
+  "priority",
+  "expected_received_date",
+  "column_break_xbmx",
+  "approval_status",
+  "added_by",
+  "revision_comments",
+  "section_break_imcc",
+  "description"
+ ],
+ "fields": [
+  {
+   "default": "Open",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Status",
+   "options": "Open\nWorking\nReview\nRevision\nCompleted\nCancelled"
+  },
+  {
+   "fieldname": "task_name",
+   "fieldtype": "Data",
+   "label": "Task Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "column_break_xbmx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.status== \"Revision\"",
+   "fieldname": "revision_comments",
+   "fieldtype": "Small Text",
+   "label": "Revision Comments",
+   "mandatory_depends_on": "eval:doc.status== \"Revision\""
+  },
+  {
+   "fieldname": "section_break_imcc",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text Editor",
+   "label": "Description"
+  },
+  {
+   "default": "Addon",
+   "fieldname": "project",
+   "fieldtype": "Select",
+   "label": "Project",
+   "options": "Addon\n\u0642\u064a\u0627\u0633",
+   "reqd": 1
+  },
+  {
+   "default": "Pending",
+   "depends_on": "eval:frappe.user.has_role(\"System Manager\")",
+   "fieldname": "approval_status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Approval Status",
+   "options": "Approved\nNot Approved\nPending"
+  },
+  {
+   "fieldname": "added_by",
+   "fieldtype": "Link",
+   "label": "Added By",
+   "options": "Employee",
+   "reqd": 1
+  },
+  {
+   "default": "Low",
+   "fieldname": "priority",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Priority",
+   "options": "High\nMedium\nLow"
+  },
+  {
+   "default": "Today",
+   "fieldname": "expected_received_date",
+   "fieldtype": "Datetime",
+   "label": "Expected Received Date"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-02-11 10:33:43.552476",
+ "modified_by": "Administrator",
+ "module": "Pp Addon",
+ "name": "Dev Tasks",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
